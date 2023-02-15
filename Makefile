@@ -10,7 +10,7 @@ build := build
 project := project
 
 cmake := cmake
-cmake_flags := -DCMAKE_INSTALL_PREFIX= $(shell echo "$$CMAKE_FLAGS")
+cmake_flags := -DCMAKE_INSTALL_PREFIX= $(shell echo "$$CMAKE_FLAGS")  
 
 ninja := $(if $(shell which llbuild),llbuild ninja build,ninja)
 ninja_flags := $(shell echo "$$NINJA_FLAGS")
